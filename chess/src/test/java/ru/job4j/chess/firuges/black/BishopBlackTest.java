@@ -26,7 +26,12 @@ public class BishopBlackTest {
         Assert.assertArrayEquals(result, expected);
     }
 
+    @Test
     public void testIsDiagonal() {
+        BishopBlack bb = new BishopBlack(Cell.C1);
+        boolean result = bb.isDiagonal(Cell.C1, Cell.H6);
+        boolean expected = true;
+        Assert.assertEquals(expected, result);
     }
 
     @Test
